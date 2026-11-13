@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Don’t Be Late Tee | BIAVA</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="css/style.css?v=5" rel="stylesheet">
+</head>
+<body>
+
+  <a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg biava-navbar" aria-label="Main menu">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/biava-logo.png" alt="BIAVA home" width="115" height="44">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html#shop" aria-current="true">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container py-3 py-lg-4">
+
+      <nav aria-label="Breadcrumb" class="mb-3 mb-lg-4">
+        <ol class="breadcrumb biava-breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="index.html#shop">Shop</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Don’t Be Late Tee</li>
+        </ol>
+      </nav>
+
+      <div class="product-layout">
+
+        <div class="product-gallery">
+          <div class="main-photo">
+            <div class="ratio">
+              <img id="main-photo" src="images/dont-be-late-1.jpg" alt="Cream Don’t Be Late Tee, front, with “Good Things Take Time” and a small flower printed on the chest">
+            </div>
+            <button type="button" class="photo-nav prev" id="photo-prev" aria-label="Previous photo"><svg width="10" height="16" viewBox="0 0 10 16" aria-hidden="true" focusable="false"><path d="M8 1.5L1.75 8 8 14.5" fill="none" stroke="#fff8e4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button type="button" class="photo-nav next" id="photo-next" aria-label="Next photo"><svg width="10" height="16" viewBox="0 0 10 16" aria-hidden="true" focusable="false"><path d="M2 1.5L8.25 8 2 14.5" fill="none" stroke="#fff8e4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <p class="photo-counter" id="photo-counter" aria-live="polite">Photo 1 of 4</p>
+          </div>
+
+          <ul class="thumb-list list-unstyled row row-cols-4 mt-0 mb-0 pt-3">
+            <li class="col">
+              <button type="button" class="thumb" data-src="images/dont-be-late-1.jpg" data-alt="Cream Don’t Be Late Tee, front, with “Good Things Take Time” and a small flower printed on the chest" aria-label="Show photo 1 of 4: front" aria-current="true">
+                <span class="ratio"><img src="images/dont-be-late-1.jpg" alt=""></span>
+              </button>
+            </li>
+            <li class="col">
+              <button type="button" class="thumb" data-src="images/dont-be-late-2.jpg" data-alt="Back of the cream tee, with “for the life you live” in small script across the upper back" aria-label="Show photo 2 of 4: back" aria-current="false">
+                <span class="ratio"><img src="images/dont-be-late-2.jpg" alt=""></span>
+              </button>
+            </li>
+            <li class="col">
+              <button type="button" class="thumb" data-src="images/dont-be-late-3.jpg" data-alt="Model wearing the cream Don’t Be Late Tee, front view" aria-label="Show photo 3 of 4: worn, front" aria-current="false">
+                <span class="ratio"><img src="images/dont-be-late-3.jpg" alt=""></span>
+              </button>
+            </li>
+            <li class="col">
+              <button type="button" class="thumb" data-src="images/dont-be-late-4.jpg" data-alt="Model wearing the cream Don’t Be Late Tee, back view" aria-label="Show photo 4 of 4: worn, back" aria-current="false">
+                <span class="ratio"><img src="images/dont-be-late-4.jpg" alt=""></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-info">
+          <div>
+            <h1 class="product-title">Don’t Be Late Tee</h1>
+            <p class="product-price" id="product-price" data-price="499">&#8369;499</p>
+          </div>
+
+          <p class="product-description">A simple reminder to show up, get moving, and make the most of the day.</p>
+
+          <hr>
+
+          <fieldset class="size-picker">
+            <legend class="option-label">Size <span class="option-hint" id="size-selected">Selected: none</span></legend>
+            <div class="size-options">
+              <button type="button" class="size-pill" data-size="S" aria-pressed="false">S</button>
+              <button type="button" class="size-pill" data-size="M" aria-pressed="false">M</button>
+              <button type="button" class="size-pill" data-size="L" aria-pressed="false">L</button>
+              <button type="button" class="size-pill" data-size="XL" aria-pressed="false">XL</button>
+            </div>
+            <p class="form-error" id="size-error" role="alert" hidden>Please choose a size before ordering.</p>
+          </fieldset>
+
+          <div class="quantity-picker">
+            <p class="option-label"><label for="quantity">Quantity</label> <span class="option-hint" id="quantity-hint">Minimum: 1</span></p>
+            <div class="qty-stepper">
+              <button type="button" class="qty-btn" id="qty-minus" aria-label="Decrease quantity"><svg width="16" height="2" viewBox="0 0 16 2" aria-hidden="true" focusable="false"><rect width="16" height="2" rx="1" fill="#545454"/></svg></button>
+              <input type="number" class="qty-input" id="quantity" name="quantity" value="1" min="1" max="99" inputmode="numeric" aria-describedby="quantity-hint">
+              <button type="button" class="qty-btn" id="qty-plus" aria-label="Increase quantity"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.5v13M1.5 8h13" stroke="#545454" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+            </div>
+          </div>
+
+          <div class="order">
+            <button type="button" class="btn btn-biava btn-order w-100" id="order-now"><svg width="24" height="18" viewBox="0 0 24 18" aria-hidden="true" focusable="false"><rect x="1" y="1" width="22" height="16" rx="2" fill="none" stroke="#fff8e4" stroke-width="2"/><path d="M3.5 3.5L12 10l8.5-6.5" fill="none" stroke="#fff8e4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Order Now</button>
+            <div class="order-note">
+              <img src="images/order-icon.png" alt="" width="40" height="40">
+              <p class="mb-0">Order Now opens your email app with your size and quantity already filled in, ready to send to <strong>orders@examplewebsite142.com</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="product-details" aria-labelledby="details-heading">
+          <h2 id="details-heading">Product Details</h2>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Fabric Composition:</strong> 100% combed ring-spun cotton</li>
+            <li><strong>Garment Weight:</strong> 6.1 oz (heavyweight, retail-ready feel)</li>
+            <li><strong>Print Method:</strong> High-durability soft-hand direct-to-garment (DTG) print</li>
+            <li><strong>Fit:</strong> Relaxed / Boxy fit (size up for an oversized look)</li>
+            <li><strong>Care Instructions:</strong> Machine wash cold inside out, tumble dry low. Do not iron directly on the graphic.</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="biava-footer">
+    <div class="container py-3">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <a class="footer-brand" href="index.html"><img class="footer-logo" src="images/biava-logo.png" alt="BIAVA home" width="94" height="36"></a>
+          <p class="copyright mb-0 mt-2">&copy; 2026 BIAVA. All rights reserved.</p>
+        </div>
+        <nav aria-label="Footer links">
+          <ul class="footer-links list-unstyled d-flex flex-wrap mb-0">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/keyboard.js?v=5"></script>
+  <script src="js/product.js?v=5"></script>
+</body>
+</html>
