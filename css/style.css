@@ -640,7 +640,10 @@ textarea {
 
 .contact-form input:focus-visible,
 .contact-form select:focus-visible,
-.contact-form textarea:focus-visible,
+.contact-form textarea:focus-visible {
+  outline-color: var(--biava-azure);
+  outline-offset:-4px;
+}
 .contact-form .button:focus-visible {
   outline: 3px solid var(--biava-light-orange);
   outline-offset: 2px;
