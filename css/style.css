@@ -38,9 +38,7 @@ textarea {
 .biava-navbar .nav-link:focus-visible,
 .biava-navbar .navbar-toggler:focus-visible,
 .btn-biava:focus-visible {
-  outline: 3px solid (--biava-azure);
-  outline-offset: 2px;
-  border-radius: 16px;
+  outline: 3px solid #000;
   box-shadow: none;
 }
 
