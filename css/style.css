@@ -38,8 +38,9 @@ textarea {
 .biava-navbar .nav-link:focus-visible,
 .biava-navbar .navbar-toggler:focus-visible,
 .btn-biava:focus-visible {
-  outline: 3px solid #000;
+  outline: 3px solid (--biava-azure);
   outline-offset: 2px;
+  border-radius: 16px;
   box-shadow: none;
 }
 
@@ -640,10 +641,7 @@ textarea {
 
 .contact-form input:focus-visible,
 .contact-form select:focus-visible,
-.contact-form textarea:focus-visible {
-  outline-color: var(--biava-azure);
-  outline-offset:-4px;
-}
+.contact-form textarea:focus-visible,
 .contact-form .button:focus-visible {
   outline: 3px solid var(--biava-light-orange);
   outline-offset: 2px;
