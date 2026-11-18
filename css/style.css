@@ -1336,3 +1336,7 @@ body > header {
     text-wrap: pretty;
   }
 }
+
+.shop-section {
+  overflow-x: clip;
+}
