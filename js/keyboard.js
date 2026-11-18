@@ -18,8 +18,12 @@
 
   function keepsArrowKeys(el, key) {
     var tag = el.tagName;
-    if (tag === "TEXTAREA" || tag === "SELECT") { return true; }
     if (tag === "INPUT" && el.type === "radio") { return true; }
+    if (tag === "TEXTAREA") {
+      if (key === "ArrowLeft" || key === "ArrowRight") { return true; }
+      if (key === "ArrowDown") { return el.selectionEnd < el.value.length; }
+      return el.selectionStart > 0;
+    }
     if (tag === "INPUT" && TEXT_INPUTS.indexOf(el.type) !== -1) {
       return key === "ArrowLeft" || key === "ArrowRight";
     }
@@ -27,10 +31,17 @@
   }
 
   document.addEventListener("keydown", function (e) {
+    var active = document.activeElement;
+
+    if (e.key === "Enter" && active && active.tagName === "SELECT" && typeof active.showPicker === "function") {
+      e.preventDefault();
+      try { active.showPicker(); } catch (err) { return; }
+      return;
+    }
+
     var step = STEP[e.key];
     if (!step || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) { return; }
 
-    var active = document.activeElement;
     if (active && keepsArrowKeys(active, e.key)) { return; }
 
     var list = clickables();
