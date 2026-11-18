@@ -1177,3 +1177,47 @@ textarea {
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 359.98px) {
+  .thumb .ratio {
+    --bs-aspect-ratio: 71%;
+  }
+}
+
+html {
+  scroll-padding-top: 100px;
+}
+
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.skip-link {
+  position: fixed;
+}
+
+.biava-breadcrumb a,
+.biava-footer .footer-links a,
+.biava-footer .footer-brand,
+.contact-item a {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.biava-breadcrumb a::after,
+.biava-footer .footer-links a::after,
+.contact-item a::after {
+  content: "";
+  position: absolute;
+  inset: -14px -4px;
+}
+
+.biava-footer .footer-brand::after {
+  content: "";
+  position: absolute;
+  inset: -4px 0;
+}
+
