@@ -1340,3 +1340,9 @@ body > header {
 .shop-section {
   overflow-x: clip;
 }
+
+@media (max-width: 576px) {
+  .page-intro {
+    margin-top: 1rem;
+  }
+}
